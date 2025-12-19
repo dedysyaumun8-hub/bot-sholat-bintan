@@ -1,15 +1,18 @@
+import os
 import time
 import requests
 import logging
 from datetime import datetime, date, timedelta
 print("BOT STARTED")
 # ================= CONFIG =================
-import os
-
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 CHAT_ID = int(os.getenv("CHAT_ID"))
 STICKER_ID = os.getenv("STICKER_ID")
 
+while True:
+    print("Bot still running...")
+    time.sleep(60)
+    
 CITY = "Bintan"
 COUNTRY = "Indonesia"
 CHECK_INTERVAL = 30  # detik
@@ -139,5 +142,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
