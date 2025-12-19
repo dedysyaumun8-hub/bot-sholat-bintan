@@ -1,10 +1,11 @@
-import os
 import time
 import requests
 import logging
 from datetime import datetime, date, timedelta
 print("BOT STARTED")
 # ================= CONFIG =================
+import os
+
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 CHAT_ID = int(os.getenv("CHAT_ID"))
 STICKER_ID = os.getenv("STICKER_ID")
@@ -138,4 +139,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
