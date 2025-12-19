@@ -3,7 +3,7 @@ import time
 import requests
 import logging
 from datetime import datetime, date, timedelta
-
+print("BOT STARTED")
 # ================= CONFIG =================
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 CHAT_ID = int(os.getenv("CHAT_ID"))
@@ -138,3 +138,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
